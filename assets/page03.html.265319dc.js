@@ -1,0 +1,73 @@
+import{_ as s,o as n,c as e,a}from"./app.b33ca31f.js";const i={},l=a(`<h1 id="linux-\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#linux-\u547D\u4EE4" aria-hidden="true">#</a> Linux \u547D\u4EE4</h1><hr><nav class="table-of-contents"><ul></ul></nav><p>1</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~ <span class="token comment">#\u56DE\u5230\u4E3B\u6587\u4EF6\u5939</span>
+<span class="token builtin class-name">cd</span> - <span class="token comment">#\u8FD4\u56DE\u4E0A\u4E00\u6B21\u76EE\u5F55</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>2</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> c/day01 -p <span class="token comment">#\u521B\u5EFA\u591A\u7EA7\u76EE\u5F55 \u52A0-p</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">clear</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>4</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">mv</span> tools tool <span class="token comment">#\u6539\u540D</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>5</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">ls</span> <span class="token comment">#\u67E5\u770B\u5F53\u524D\u76EE\u5F55\u4E0B\u6CA1\u6709\u9690\u85CF\u7684\u6587\u4EF6</span>
+-a <span class="token comment">#\u67E5\u770B\u9690\u85CF\u6587\u4EF6\u5939</span>
+-l <span class="token comment">#\u4EE5\u5217\u8868\u663E\u793A </span>
+-h <span class="token comment">#\u4EE5\u4EBA\u6027\u5316\u663E\u793A \u914D\u5408-l\u4F7F\u7528</span>
+/ <span class="token comment">#\u67E5\u770B\u5176\u4ED6\u8DEF\u5F84\u6587\u4EF6</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>6</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>cat<span class="token operator">&gt;</span>a.txt <span class="token comment">#\u53C2\u770B\u6587\u4EF6 \u82E5\u4E0D\u5B58\u5728\u5219\u521B\u5EFA</span>
+<span class="token function">cat</span> a.txt <span class="token comment">#\u67E5\u770B\u6587\u4EF6</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>7</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">touch</span> a.txt <span class="token comment">#\u521B\u5EFA\u6587\u4EF6\uFF08\u4E0D\u80FD\u7F16\u8F91\u6587\u4EF6\uFF09</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>8</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>--help    <span class="token comment">#eg:touch --help  \u67E5\u770Btouch\u5E2E\u52A9</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>9</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">man</span> <span class="token comment">#linux\u6709\u95EE\u9898\u627E\u7537\u4EBA \u67E5\u770B\uFF081\u547D\u4EE4\u30012\u5E93\u51FD\u6570\u30013\u7CFB\u7EDF\u8C03\u7528\uFF09\u6309\u7AE01 2 3 \u67E5\u627E   </span>
+	<span class="token comment">#eg\uFF1Aman 1 ls \u4ECE\u7B2C\u4E00\u7AE0\u8282\u67E5 ls  man 3 printf</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>10</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">history</span> <span class="token comment">#\u67E5\u770B\u5386\u53F2\u547D\u4EE4</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>11</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#\u91CD\u5B9A\u5411 &gt; </span>
+<span class="token comment">#eg: ls &gt; a.txt   #\u5C06ls\u6267\u884C\u540E\u7684\u7ED3\u679C\u8F93\u51FA\u5230\u6587\u4EF6\u4E2D</span>
+<span class="token comment">#eg: echo &quot;hello world&quot; &gt; a.txt #\u5C06echo\u547D\u4EE4\u7684\u7ED3\u679C\u8F93\u51FA\u5230a.txt  \u4F1A\u8986\u76D6\u4E0A\u6B21\u7ED3\u679C</span>
+<span class="token comment">#&gt;&gt; \u4E24\u4E2A\u5C31\u662F\u8FFD\u52A0 </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>12</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">ps</span> -A <span class="token comment">#\u663E\u793A\u6240\u6709\u8FDB\u7A0B</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>13</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">grep</span> hehe  <span class="token comment">#xxx\u7EC8\u7AEF\u4E0A\u67E5\u627Ehehe</span>
+<span class="token comment">#\u5728\u6587\u4EF6\u4E2D\u67E5\u627E grep \u67E5\u627E\u4FE1\u606F \u6587\u4EF6\u540D \u53C2\u6570   </span>
+-n <span class="token comment">#\u7684\u610F\u601D\u663E\u793A\u884C\u53F7</span>
+-R <span class="token comment">#\u9012\u5F52 \u5C0Fr\u4E0D\u884C\u5C31\u5927R  \u5927\u4E0D\u884C\u5C31\u5C0F</span>
+<span class="token comment">#eg: grep hello a.txt -n</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>14</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#\u7BA1\u9053</span>
+<span class="token comment">#\u5199\u7AEF|\u8BFB\u7AEF\uFF08\uFF09</span>
+<span class="token comment">#eg\uFF1A ps -A|grep ssh    \u4ECEps -A\u7684\u7ED3\u679C\u627E ssh</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>15</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>tree <span class="token comment">#\u6811\u72B6\u663E\u793A</span>
+tree -L <span class="token number">3</span>  <span class="token comment">#l\u4EE3\u8868\u5C42\u6570</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>16</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">pwd</span> <span class="token comment">#\u663E\u793A\u8DEF\u5F84</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>17</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">rm</span> <span class="token comment">#\u5220\u9664\u6587\u4EF6\u6216\u76EE\u5F55</span>
+<span class="token function">rm</span> *.txt <span class="token comment">#\u5220\u9664\u6240\u6709txt</span>
+<span class="token comment">#\u5220\u9664\u76EE\u5F55\u4E00\u5B9A\u8981\u52A0 -r</span>
+<span class="token function">rm</span> /* -rf
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>18</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">cp</span> a.txt  ./a
+<span class="token comment">#\u62F7\u8D1D\u6587\u4EF6\u5939\u5FC5\u987B\u52A0 -r </span>
+<span class="token function">cp</span> a.txt b.txt <span class="token comment">#\u5C06\u6587\u4EF6a\u5907\u4EFD\u4E3Ab</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>19</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">mv</span> <span class="token comment">#\u79FB\u52A8\uFF08\u526A\u5207\uFF09\u6587\u4EF6\u6216\u76EE\u5F55 \u79FB\u52A8\u8FC7\u53BB\u6E90\u6587\u4EF6\u6D88\u5931\uFF01</span>
+<span class="token comment">#\u5DE7\u5999\u8FD0\u7528\u5C31\u662F\u4FEE\u6539\u6587\u4EF6\u540D  \u91CD\u547D\u540D\uFF01</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>20</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">ln</span> <span class="token comment">#\u94FE\u63A5\u6587\u4EF6 </span>
+<span class="token comment">#\u8F6F\u94FE\u63A5\uFF1A ln \u6E90\u6587\u4EF6\u540D\u5B57 \u94FE\u63A5\u6587\u4EF6\u540D\u5B57 -s</span>
+<span class="token comment">#eg\uFF1Aln c.txt c_s -s   \u6E90\u6587\u4EF6\u53D8 \u94FE\u63A5\u6587\u4EF6\u4E00\u8D77\u53D8</span>
+<span class="token comment">#\u786C\u8FDE\u63A5\uFF1A ln \u6E90\u6587\u4EF6\u540D\u5B57 \u94FE\u63A5\u6587\u4EF6\u540D\u5B57</span>
+<span class="token comment">#eg\uFF1Aln c.txt c_s  \u94FE\u63A5\u6587\u4EF6\u4E0D\u53D7\u5F71\u54CD</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>21</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#\u6253\u5305\u548C\u538B\u7F29\u533A\u522B\u5C31\u5728\u4E8E\u538B\u4E0D\u538B\u7F29</span>
+<span class="token comment">#tar \u9ED8\u8BA4\u662F\u6253\u5305\u547D\u4EE4 \u8981\u538B\u7F29\u5FC5\u987B\u52A0\u9009\u9879</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>gzip\u683C\u5F0F
+<span class="token comment">#tar zcvf \u538B\u7F29\u5305\u540D \u6587\u4EF61 \u6587\u4EF62 \u3002\u3002\u3002\u3002</span>
+<span class="token comment">#\u538B\u7F29\uFF1A tar zvcf test.tar.gz a.txt b.txt (z\u4EE3\u8868gzip v\u4EE3\u8868\u663E\u793A\u8FDB\u5EA6 c\u662Fcreat f\u5FC5\u987B\u5728\u6700\u540E)\u6587\u4EF6\u540E\u7F00\u5728linux\u4E2D\u4E0D\u53D7\u9650\u5236\u6700\u597D\u4EE5\u8FD9\u6837\u7684\u65B9\u5F0F\u547D\u540D</span>
+<span class="token comment">#\u89E3\u538B\uFF1Atar zxvf \u538B\u7F29\u5305\u540D -C ./ (-C\u5C06\u538B\u7F29\u5305\u89E3\u538B\u5230\u76EE\u7684\u76EE\u5F55)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>bz2\u683C\u5F0F
+<span class="token comment">#tar jcvf test.tar.bz2 a.txt b.txt</span>
+<span class="token comment">#tar jxvf test.tar.bz2 </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>\u66B4\u529B\u89E3\u538B
+<span class="token comment">#tar xvf test.tar.bz2 </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>22</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#\u7F16\u8F91\u6A21\u5F0F\uFF1A\u590D\u5236\u3001\u7C98\u8D34\u3001\u526A\u63A5  	|\u7A7A\u767D\u4EC0\u4E48\u90FD\u6CA1\u6709</span>
+<span class="token comment">#u\u64A4\u9500</span>
+<span class="token comment">#Ctrl +r \u53CD\u64A4\u9500</span>
+<span class="token comment">#\u63D2\u5165\u6A21\u5F0F\uFF1A\u7528\u6237\u7F16\u8F91\u4EE3\u7801		|i o	</span>
+<span class="token comment">#\u547D\u4EE4\u884C\u6A21\u5F0F\uFF1A\u4FDD\u5B58\u3001\u9000\u51FA\u3001\u53E6\u5B58\u4E3A	|\uFF1AZZ</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>23</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#\u66F4\u6539\u811A\u672C\u6743\u9650</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> +x NAME
+<span class="token comment">#\u6216\u8005</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> <span class="token number">775</span> NAME
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>24</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#\u66F4\u6539\u6587\u4EF6\u5939\u8BBF\u95EE\u6743\u9650</span>
+<span class="token comment">#\u9012\u5F52\u6587\u4EF6\u5939\u4E0B\u6240\u6709\u6587\u4EF6</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> -Rf <span class="token number">777</span> NAME
+<span class="token comment">#\u5426\u5219</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> <span class="token number">777</span> NAME
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,54),c=[l];function d(t,p){return n(),e("div",null,c)}var m=s(i,[["render",d],["__file","page03.html.vue"]]);export{m as default};
